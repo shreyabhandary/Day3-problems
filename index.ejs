@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Store</title>
+    <style>
+        .border{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+  <h1>
+    Product list:
+  </h1>   
+  <table class="border">
+    <tr>
+        <th>Sr.No.</th>
+        <th>Product title</th>
+        <th>price</th>
+       
+    </tr>
+         <% for(let i=0; i<10; i++){ %>
+            <tr>
+                
+                <td>
+                    <%=data[i].id%> 
+               </td>
+                <td>
+                    <%=data[i].title%> 
+                </td>
+                <td>
+                     <%=data[i].price%> 
+                </td>
+            </tr>
+
+            <%} %>
+        </table>
+
+        </body>
+        </html>
+  …
